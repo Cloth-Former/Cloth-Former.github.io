@@ -68,8 +68,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/luxiangju-PersonAI/ClothFormer"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://cloth-former.github.io/" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -77,7 +76,7 @@
                   </a>
                 </span>
                 <!-- arxiv Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/luxiangju-PersonAI/ClothFormer"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -85,7 +84,7 @@
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Video Link. -->
                 <!-- <span class="link-block">
                   <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
@@ -187,50 +186,74 @@
               that our method highly surpasses the baselines in terms of synthesized video quality both qualitatively
               and quantitatively. The framework of ClothFormer is:
             </p>
-            <div class="hero-body">
+            <!-- <div class="hero-body">
               <img src="./Example/overview_ClothFormer.png" class="interpolation-image"
                 alt="Interpolate start reference image.">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
       <hr>
   </section>
 
-
-
   <section class="section">
     <div class="container is-max-desktop">
-      
-        <div class="column is-full-width has-text-centered container is-max-desktop">
-        <h2 class="title is-3">Results</h2>
-        <!-- res iqiyi. -->
-        <div class="columns is-centered">
-        <div class="column">
-          <div class="content">
-            <h3 class="title is-4">results on iqiyi-VVT</h3>
-            <iframe width="500" height="800" src="https://www.youtube.com/embed/zZROvjICr9A"
-              title="ClothFormer on iqiyiVVT" frameborder="0" allowtransparency="yes"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <!--/ res iqiyi. -->
-
-        <!-- res vvt. -->
-        <div class="column">
-          <h3 class="title is-4">results on VVT</h3>
-          <div class="columns is-centered">
-            <div class="column content">
-              <iframe width="500" height="800" src="https://www.youtube.com/embed/ypGBp7IoOzA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Framework</h2>
+          <div class="content has-text-justified">
+            
+            <div class="hero-body">
+              <img src="./Example/overview_ClothFormer.png" class="interpolation-image"
+                alt="Interpolate start reference image.">
             </div>
-
+            <p>
+              (a) First, we obtain clothing-agnostic person image sequences. (b) We predict t warped clothes
+               by TPS-based warp method to infer an anti-occlusion target clothes, then
+              appearance-flow-based warp method is adopted to get an appearance flow. (c) Appearance-flow tracking
+              module based on ridge regression and optical flow correction is designed to get warped clothing sequence
+              with spatio-temporally consistent. (d) Finally, MPDT generator synthesizes the final output video sequence
+               based on the outputs from the previous stages.
+            </p>
           </div>
         </div>
       </div>
+      <hr>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <div class="column is-full-width has-text-centered container is-max-desktop">
+        <h2 class="title is-3">Results</h2>
+        <!-- res iqiyi. -->
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <h3 class="title is-4">results on iqiyi-VVT</h3>
+              <iframe width="500" height="800" src="https://www.youtube.com/embed/zZROvjICr9A"
+                title="ClothFormer on iqiyiVVT" frameborder="0" allowtransparency="yes"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <!--/ res iqiyi. -->
+
+          <!-- res vvt. -->
+          <div class="column">
+            <h3 class="title is-4">results on VVT</h3>
+            <div class="columns is-centered">
+              <div class="column content">
+                <iframe width="500" height="800" src="https://www.youtube.com/embed/ypGBp7IoOzA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -239,12 +262,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">Citation</h2>
-      <pre><code>@article{jiang2022clothformer,
-  author    = {Jianbin, Jiang and Tan, Wang and He, Yan and Junhui, Liu},
-  title     = {ClothFormer: Taiming Video Virtual Try-on in All Module},
-  journal   = {CVPR},
-  year      = {2022},
-}</code></pre>
+      <pre>
+        <code>
+@inproceedings{jiang2022clothformer,
+      title={ClothFormer: Taming Video Virtual Try-on in All Module},
+      author={Jianbin Jiang and Tan Wang and He Yan and Junhui Liu},
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year={2022}
+}</code>
+    </pre>
     </div>
   </section>
 
