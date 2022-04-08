@@ -62,7 +62,7 @@
             <div class="is-size-5 publication-authors">
               <span class="author-block">iQIYI Inc.</span>
             </div>
-            
+
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -200,18 +200,18 @@
         <div class="column is-full">
           <h2 class="title is-3">Framework</h2>
           <div class="content has-text-justified">
-            
+
             <div class="hero-body">
               <img src="./Example/overview_ClothFormer.png" class="interpolation-image"
                 alt="Interpolate start reference image.">
             </div>
             <p>
               (a) First, we obtain clothing-agnostic person image sequences. (b) We predict t warped clothes
-               by TPS-based warp method to infer an anti-occlusion target clothes, then
+              by TPS-based warp method to infer an anti-occlusion target clothes, then
               appearance-flow-based warp method is adopted to get an appearance flow. (c) Appearance-flow tracking
               module based on ridge regression and optical flow correction is designed to get warped clothing sequence
               with spatio-temporally consistent. (d) Finally, MPDT generator synthesizes the final output video sequence
-               based on the outputs from the previous stages.
+              based on the outputs from the previous stages.
             </p>
           </div>
         </div>
@@ -223,39 +223,40 @@
 
       <div class="column is-full-width has-text-centered container is-max-desktop">
         <h2 class="title is-3">Results</h2>
-        <!-- res iqiyi. -->
+        <div class="content">
+          <h3 class="title is-4">results on iqiyi-VVT</h3>
+              <video autoplay loop muted playinline width="100%">
+                  <source src="./Example/demo_iqiyiVVT_clip1.mp4" type="video/mp4">
+              </video>
+              <video autoplay loop muted playinline width="100%">
+                <source src="./Example/demo_iqiyiVVT_clip2.mp4" type="video/mp4">
+              </video>
+              <video autoplay loop muted playinline width="100%">
+                <source src="./Example/demo_iqiyiVVT_clip3.mp4" type="video/mp4">
+              </video>
+        </div>
+        <!-- </div> -->
+        <!--/ res iqiyi. -->
+
+        <!-- res vvt. -->
+        <!-- <div class="column"> -->
+        <h3 class="title is-4">results on VVT</h3>
         <!-- <div class="columns is-centered"> -->
-          <!-- <div class="column"> -->
-            <div class="content">
-              <h3 class="title is-4">results on iqiyi-VVT</h3>
-              <iframe width="1000" height="667" src="https://www.youtube.com/embed/3oVYNV61iGI?autoplay=1&loop=1&playlist=3oVYNV61iGI"
-                title="ClothFormer on iqiyiVVT" frameborder="0" allowtransparency="yes"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          <!-- </div> -->
-          <!--/ res iqiyi. -->
+        <div class="content">
+          <video autoplay loop muted playinline width="100%">
+              <source src="./Example/clothformer_on_vvt.mp4" type="video/mp4">
+          </video>
+        </div>
 
-          <!-- res vvt. -->
-          <!-- <div class="column"> -->
-            <h3 class="title is-4">results on VVT</h3>
-            <!-- <div class="columns is-centered"> -->
-              <div class="content">
-                <iframe width="1000" height="667" src="https://www.youtube.com/embed/VdZV7kcbgAs?autoplay=1&loop=1&playlist=VdZV7kcbgAs"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-
-            <!-- </div> -->
-          <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
         <!-- </div> -->
       </div>
     </div>
   </section>
 
 
-  
+
 
 
   <section class="section" id="BibTeX">
