@@ -67,21 +67,21 @@
 
         <ul>
           <li>
-            <p>model videos in 256x192 resolution(the model was cropped and padding, then resized to 256x192 resolution),</p>
+            <p>model videos(the person was cropped and padding, then resized to 256x192 resolution),</p>
           </li>
           <li>
-            <p>model's <a href="https://github.com/facebookresearch/detectron2">DensePose</a> labels,</p>
+            <p><a href="https://github.com/facebookresearch/detectron2">DensePose</a> labels,</p>
           </li>
           <li>
-            <p>model's parsing results extracted by <a href="https://github.com/Engineering-Course/CIHP_PGN">CIHP_GPN</a>,
+            <p>parsing results extracted by <a href="https://github.com/Engineering-Course/CIHP_PGN">CIHP_GPN</a>,
             </p>
           </li>
           <li>
-            <p>model's matting results extracted by <a href="https://github.com/ZHKKKe/MODNet">MODNet</a>,
+            <p>matting results extracted by <a href="https://github.com/ZHKKKe/MODNet">MODNet</a>,
             </p>
           </li>
           <li>
-            <p>model's keypoints extracted by <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">openpose</a>.</p>
+            <p>body keypoints detected by <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">openpose</a>.</p>
           </li>
         </ul>
         <p style="text-align:justify">
@@ -199,19 +199,19 @@ I'll not sell any part of this dataset or make any profit from its use.
         </span>          -<span class="ruby"> <span class="hljs-number">00000001</span>.png
         </span>          -<span class="ruby"> <span class="hljs-number">00000002</span>.png
         </span>          ...
-              -<span class="ruby"> {vid}_densepose ------------- model's densepose labels
+              -<span class="ruby"> {vid}_densepose ------------- densepose labels
         </span>          -<span class="ruby"> <span class="hljs-number">00000001</span>.npy
         </span>          -<span class="ruby"> <span class="hljs-number">00000002</span>.npy
         </span>          ...
-              -<span class="ruby"> {vid}_landmark -------------- model's body keypoints
+              -<span class="ruby"> {vid}_landmark -------------- body keypoints
         </span>          -<span class="ruby"> <span class="hljs-number">00000001</span>.json
         </span>          -<span class="ruby"> <span class="hljs-number">00000002</span>.json
         </span>          ...
-              -<span class="ruby"> {vid}_matte ----------------- model's matting results
+              -<span class="ruby"> {vid}_matte ----------------- matting results
         </span>          -<span class="ruby"> <span class="hljs-number">00000001</span>.png
         </span>          -<span class="ruby"> <span class="hljs-number">00000002</span>.png
         </span>          ...
-              -<span class="ruby"> {vid}_parse ----------------- model's parsing results
+              -<span class="ruby"> {vid}_parse ----------------- parsing results
         </span>          -<span class="ruby"> <span class="hljs-number">00000001</span>.png
         </span>          -<span class="ruby"> <span class="hljs-number">00000002</span>.png
         </span>      -<span class="ruby"> {vid}_color.png ------------- garment's image
